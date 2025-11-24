@@ -1,129 +1,144 @@
-#include<stdio.h>
-void main (){
-    int a=26;
-    if(a%2==0)
-    {
-        printf("even");
+ //Write a program to print 1 to 10 numbers using while loop 
+ #include <stdio.h>
+void main() {
+    int a=10;
+    int i=1;
+    while(i<=9){
+        printf("%d ",i);
+                  i++;
     }
-    if(a%2!=0)
-    {
-        printf("odd");
-    }
+      printf("%d",i);
 }
+   
 
-
-
-
-
-
-
-
-#include<stdio.h>
-void main ()
-{
-    int a=9;
-    if(a>0){
-        printf("number  is positive");
-    }
-    else{
-        printf("number is negative");
-    }
-}
-
-
-
-
-
-
-
-#include<stdio.h>                                                                                                                                                                               
-void main ()
-{
-    char gender='g';
-    if(gender=='b'){
-        printf("boy");
-    }
-    if (gender=='g'){
-        printf("girl");
-    
-    }
-}
-
-
-
-
-
-
-
-#include<stdio.h>
-void main (){
+   //Write a program to print 1-n numbers using while loop
+ #include <stdio.h>
+void main() {
     int n;
-    printf("enter  a number:");
     scanf("%d",&n);
-    switch(n){
-        case 1 :
-        printf("one");
-        break;
-    case 2 :
-    printf("two");
-    break;
-          case 3 :
-          printf("three");
-          break;
-    case 4 :
-    printf("four");
-    break;
-           case 5:
-           printf("five");
-        break;
-        default:
-        printf("number out of limit");
-    }
+    int i=1;
+    while(i<=(n-1)){
+        printf("%d",i);
+                  i++;
+                     }
+                   
+  
 }
 
 
+    //Write a program to print numbers b/w lower limit and upper limit using while loop
+ #include <stdio.h>
+void main() {
+    int lower,upper;
+    scanf("%d%d",&lower,&upper);
+
+    while(lower<upper){
+        printf("%d ",lower);
+                  lower++;
+                     }
+                   printf("%d",lower);
+  
+}
 
 
+       //Write a program to print numbers b/w lower limit and upper limit using while loop
+ #include <stdio.h>
+void main() {
+    int lower,upper;
+    scanf("%d%d",&lower,&upper);
+  if(lower<upper){
+    while(lower<upper){
+        printf("%d ",lower);
+                  lower++;
+                     }
+                   printf("%d",lower);
+  }
+  else{
+      printf("Invalid number");
+}
+}
 
 
-
-
-#include<stdio.h>
-void main (){
-    char ch;
-    printf("enter character:");
-    scanf("%c",&ch);
-    if(ch=='a'|| ch=='e'||ch=='i'||ch=='o'||ch=='u'){
-        printf("giver char is vowel");
+    //Write a program to print even numbers b/w lower limit and upper limit using while loop
+ #include <stdio.h>
+void main() {
+    int lower,upper;
+    scanf("%d%d",&lower,&upper);
+  if(lower<upper){
+    while(lower<upper){
+         if(lower%2==0){
+        printf("%d ",lower);
+         }
+                  lower++;
     }
-    else{
-        printf("given char is constant ");
+                   printf("%d",lower);
+  }
+  else{
+      printf("Invalid number");
+}
+}
+
+        //Write a program to print odd numbers b/w lower limit and upper limit using while loop
+ #include <stdio.h>
+void main() {
+    int lower,upper;
+    scanf("%d%d",&lower,&upper);
+  if(lower<upper){
+    while(lower<upper){
+         if(lower%2!=0){
+        printf("%d ",lower);
+         }
+                  lower++;
     }
+                //   printf("%d",lower);
+  }
+  else{
+      printf("Invalid number");
+}
+}
+
+     //Write a program to print sum numbers b/w lower limit and upper limit using while loop
+ #include <stdio.h>
+void main() {
+    int lower,upper;
+    int s=0;
+    scanf("%d%d",&lower,&upper);
+  if(lower<upper){
+    while(lower<=upper){
+        s=s+lower;
+              lower++;
+        //printf("%d ",s);
+         }
+            printf("%d",s);
     }
+              
+  
+  else{
+      printf("Invalid number");
+}
+}
 
+   //Write a program to print individual digits a of a given number
+ #include <stdio.h>
+void main() {
+    int n,r;
+    scanf("%d",&n);
 
+    while(n>0){
+     r=n%10;
+   
+       printf("%d",r);
+        n=n/10;
+}
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   //Write a program to print  1 to 10 numbers using do-while
+ #include <stdio.h>
+void main() {
+    int n=10;
+   int i=1;
+         do{
+             printf("%d ",i);
+             i++;
+         }while(n>=i);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+}
